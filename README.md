@@ -2,6 +2,8 @@
 
 Realtime mouses for you react/nextjs app. This is a piece of code first used on [UiBun.dev](https://uibun.dev).
 
+<img width="1383" alt="Screenshot 2023-12-08 at 10 07 26 PM" src="https://github.com/prasannamestha/realtime-mouses/assets/24790143/c679fcbe-5b20-403d-af2f-9a063190aba0">
+
 ## Installation
 
 ```
