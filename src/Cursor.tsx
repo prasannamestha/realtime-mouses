@@ -23,14 +23,24 @@ export const Cursor: FC<Props> = ({
   if (_isLocalClient) return null;
 
   return (
-    <div className="z-50">
+    <div
+      style={{
+        zIndex: 50,
+      }}
+    >
       <svg
         width="18"
         height="24"
         viewBox="0 0 18 24"
         fill="none"
-        className="absolute top-0 left-0 !z-50 transition transform opacity-70 pointer-events-none"
         style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          zIndex: 50,
+          transition: 'transform 0.2s ease',
+          opacity: 0.7,
+          pointerEvents: 'none',
           color,
           transform: `translateX(${x}px) translateY(${y}px)`,
         }}
@@ -44,8 +54,19 @@ export const Cursor: FC<Props> = ({
         />
       </svg>
       <span
-        className="absolute !z-50 px-2 py-0 text-xs text-white transition transform border rounded opacity-70 pointer-events-none top-6 left-2"
         style={{
+          position: 'absolute',
+          zIndex: 50,
+          padding: '0 0.5rem',
+          fontSize: '0.75rem',
+          color: 'white',
+          transition: 'transform 0.2s ease',
+          border: '1px solid',
+          borderRadius: '0.25rem',
+          opacity: 0.7,
+          pointerEvents: 'none',
+          top: '1.5rem',
+          left: '0.5rem',
           backgroundColor: color,
           borderColor: hue,
           transform: `translateX(${x}px) translateY(${y}px)`,
